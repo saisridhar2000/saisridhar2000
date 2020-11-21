@@ -1,0 +1,98 @@
+<html>
+<head>
+<style>
+body{
+background-image:url('flower.jpg');
+background-repeat:no-repeat;
+background-size:cover;
+}
+.blink-image {
+    -moz-animation: blink normal 1.2s infinite ease-in-out; /* Firefox */
+    -webkit-animation: blink normal 1.2s infinite ease-in-out; /* Webkit */
+    -ms-animation: blink normal 1.2s infinite ease-in-out; /* IE */
+    animation: blink normal 1.2s infinite ease-in-out; /* Opera and prob css3 final iteration */
+}
+ 
+@-moz-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+} 
+ 
+@-webkit-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+/* IE */
+@-ms-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+} 
+/* Opera and prob css3 final iteration */
+@keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+} 
+.blinking{
+    animation:blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+    
+    100%{   color: yellow;    }
+}
+#para1 {
+  text-align: center;
+  color: red;
+}
+#para2 {
+  color: green;
+}
+#para3 {
+  background-color: red;
+}
+h1{
+color: green;
+text-align: center;
+}
+</style>
+</head>
+<br><br><br><br><br><br>
+<body class="blink-image">
+
+<h1><u id="para3" class="blinking">KKR and KSR </u> Institute</h1>
+<marquee behavior="alternate" direction="up"><p align="center" style= "background-color:yellow; font-size:17;">This is my first <u id="para1"> HTML </u> lab</p></marquee>
+<p align="center" style= "background-color:yellow; font-size:17;"> I have created the list of departments </p>
+<ol style= "text-align:center;">
+<a href="cse.html" id="para2">CSE </a><br>
+<a href="EEE.html" id="para2">EEE </a><br>
+<a href="ECE.html" id="para2">ECE </a><br>
+<a href="Civil.html" id="para2">Civil </a></ol>
+</body>
+</html>
